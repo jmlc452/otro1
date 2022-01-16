@@ -1,0 +1,753 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PointChain - WhitePaper</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+
+<style>
+    .margen{
+        margin-bottom: 100px;
+        border-bottom: 1px solid #000;
+        padding-top: 100px;
+    }
+    h1, h2, h3, h4, h5, h6{
+        margin: 20px;
+    }
+    .negrita{
+        font-weight: bold;
+    }
+    .grilla{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 20px;
+    }
+    .grilla3{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 20px;
+    }
+    .grilla3 div {
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(90, 90, 90);
+    }
+    .grilla div {
+    padding: 5px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(90, 90, 90);
+    }
+    .subtitulo{
+        font-size: 15px;
+        color: rgb(175, 175, 175);
+    }
+    .nav-item p {
+        margin-top: 20px;
+    }
+    .q1 p{
+        margin-bottom: -5px;
+    }
+
+    .navbar-nav li{
+        margin-bottom: -20px;
+    }
+
+</style>
+
+<body>
+    
+    <div class="container">
+        <nav class="navbar navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <h4><img style="width: 150px;" src="../img/logo.png" alt=""> - WhitePaper</h4>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Index</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#pointchain">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#departureschedule">Departure schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#presale">Pre-Sale LIMITED NFT</a>
+                    </li>
+                    <li class="nav-item">
+                        <p class="subtitulo">TOKENOMICS</p>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#token">The POCH token</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#airdrop">BATH AirDrops and IDOs</a>
+                    </li>
+                    <li class="nav-item">
+                        <p class="subtitulo">ECOSYSTEM</p>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nft">NFTs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#requi">Requirements for BattleHero</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#roadmap">Roadmap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rules">Rules</a>
+                    </li>
+                    <li class="nav-item">
+                        <p class="subtitulo">POINTCHAIN</p>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#weapon">Weapon</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#porba">Types of Chests and their probabilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#funsions">Funsions</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </div>
+        </nav>
+
+        <div style="height: 50px;"></div>
+        <div class="container">
+            <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="10" class="scrollspy-example-2" tabindex="0">
+                <div id="pointchain" class="margen">
+                    <h1 id="item-1">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">PointChain</font>
+                        </font>
+                    </h1>
+                    <p>
+                        First of all we want to welcome you to Battle Hero, the first game which will reward you directly every minute you spend on it, both in fun and economically. Remember that Battle Hero is Free to Play and Play to Earn.
+                    </p>
+                    <p>
+                        Battle Hero's project intention was from the very start to create an NFT game where users could be rewarded when they play it, as more hours are spent playing and enjoying this fun game more coins will be redeemned by them. This game was developed by and for players.
+                    </p>
+                    <p>
+                        What sets us apart from our competence is the "All Included Model" that we provide, where you can enjoy the game in different ways, in a more active way playing every day and opting to be the best in tournaments, leagues, events ... or simply staking your characters and visiting the game daily to see your daily rewards or maybe you just want to play to open chests and make your team stronger and more valuable. Remember that Battle Hero has its own marketplace where you can trade, sell and buy any hero or weapon with Battle Hero as an intermediary in a quick, easy and secure way.
+                    </p>
+                    <p>
+                        As you can see Battle Hero is not just a game, it is the result of solving an accumulation of needs that we consider necessary in any NFT game. Thanks to Unity and its 3D game technology we have been able to create more than 5000 possible combinations between heroes, weapons and rarities and 5 maps that will be available in the final version of the game.
+                    </p>
+                    <p>
+                        Remember that each Hero or Weapon has an unique gene that defines it. According to our numbers there are more than 1 million total combinations. In addition, each Hero or Weapon has 5 rarities with 4 different stats + 1 training level. These stats range in value from 1 to 1XX depending on their rarity, but if this wasnt good enought, think about this, you can combine each Hero and Weapon as you want, isnt it great? That increases its rarity, power and value in the market. ¡BOOM! 
+                    </p>
+                    <p>
+                        But... What about the 3D In-Game modes? You'll be amazed, as of today we already contemplate 5 In-Game game modes 1vs1, 5vs5, 10vs10 and an all vs. all of 10.
+                    </p>
+                    <p>
+                        Any type of player is rewarded with tokens. Whether they are stacking players, In-Game 3D players or  marketplace players as everything is fully compatible.
+                    </p>
+                </div>
+                
+                <div id="departureschedule" class="margen">
+                    <h1>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Departure schedule </font>
+                        </font>
+                    </h1>
+
+                    <h3>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Upcoming Events</font>
+                        </font>
+                    </h3>
+
+                    <p class="negrita">
+                        September 
+                    </p>
+                    <p>
+                        01/09/2021 - Opening of the Whitelist sweepstakes on Gleam.io -> https://gleam.io/dUrwa/battlehero
+                    </p>
+                    <p class="negrita">October </p>
+                    <p>
+                        01/10/2021 - LIMITED Pre-Sale NFT of Heroes and Weapons 
+                    </p>
+                    <p>
+                        02/10/2021 - Pre-Sale LIMITED NFT of Heroes and Weapons
+
+                    </p>
+                    <p>
+                        03/10/2021 - Pre-Sale LIMITED NFT of Heroes and Weapons 
+
+                    </p>
+                    <p>
+                        10/13/2021 - End of WhiteList Giveaway (gleam.io) for WhiteList 
+
+                    </p>
+                    <p>
+                        10/14/2021 - List of Airdrop (Gleam.io) winners for WhiteList 
+
+                    </p>
+                    <p>
+                        10/15/2021 - Airdrop winners will be able to buy 1BATH=0,005 BUSD. Time: 19:00:00 UTC 
+
+                    </p>
+                    <p>
+                        19/10/2021 - IDO public 1BATH=0,01 BUSD. Time: 19:00:00 UTC 
+
+                    </p>
+                    <p>
+                        20/10/2021 - Listing of BATH token on exchange. Time: 19:00:00 UTC 
+
+                    </p>
+                    <p>
+                        20/10/2021 - Opening of BattleHero to the public*. 
+
+                    </p>
+                    <p>
+                        20/10/2021 - BattleHero release (Stacking, Marketplace, Chests purchase...). Time: 19:00:00 UTC 
+
+                    </p>
+                </div>
+            
+                <div id="presale" class="margen">
+                    <h5 id="item-1-2">
+                        <font style="vertical-align: inherit;">
+                            <h1>SOLD OUT - Pre-Sale LIMITED NFT</h1>
+                        </font>
+                    </h5>
+                    <p>
+                        Take advantage of the unique opportunity that Battle Hero is going to give you, you will be able to get NFTs safely according to the rarity you want thanks to its pre-sale. We do this to compensate all those who trust us from the beginning. Remember that this is a limited pre-sale while stocks last. In this pre-sale you will be able to acquire a chest of any rarity, which will give you a Hero or Weapon of the rarity of the chest. You will be able to see which Hero or Weapon you get the same day you purchase the chest. At Battle Hero we don't waste your time 😜. 
+                    </p>
+                    <p>
+                        The purchase of these NFT will be available with BNB. We can assure you that with the bias that the BATH token has, the price will be +20% with the price of each Hero or Weapon in 3 months. 
+                    </p>
+                    <p>
+                        Here we show you the chests:
+                    </p>
+                    <div class="container grilla">
+                        <div>Color Chest</div>
+                        <div>Rarity</div>
+                        <div>Units per day</div>
+                        <div>Precio BNB</div>
+                        <div>Gris</div>
+                        <div>Common</div>
+                        <div>0</div>
+                        <div>There will be no common chests</div>
+                        <div>Blue</div>
+                        <div>Low Rare</div>
+                        <div>1200</div>
+                        <div>0,08 BNB</div>
+                        <div>Deep Blue</div>
+                        <div>Rare</div>
+                        <div>750</div>
+                        <div>0,25 BNB</div>
+                        <div>Purple</div>
+                        <div>Epic</div>
+                        <div>300</div>
+                        <div>0,6 BNB</div>
+                        <div>Orange</div>
+                        <div>Legendary</div>
+                        <div>20</div>
+                        <div>1,35 BNB</div>
+                        <div>Black</div>
+                        <div>Mythic</div>
+                        <div>6</div>
+                        <div>1,98 BNB</div>
+                    </div>
+                    <p>
+                        We bring you this section of the Whitepaper where you can see the stacking according to its rarity, click here or go to the Battle Hero Rewards section (Staking/Training).
+                    </p>
+                </div>
+                
+                <div id="token" class="margen">
+                    <h4 id="item-2">
+                        <font style="vertical-align: inherit;">
+                            <h1>The POCH token</h1>
+                        </font>
+                    </h4>
+                    <h4>5-year token distribution
+                    </h4>
+                    <p>The Battle Hero Coin ($BATH) is a token that uses ERC-20/BEP-20 technology.</p>
+                    <p>The goal of $BATH is to avoid inflation by limiting the maximum number of tokens to one billion tokens (1,000,000,000) to be distributed over 5 years in Battle Hero. 
+                    </p>
+                    <p>This token is used as the main cryptocurrency/token within the entire game. All in-game and out-of-game economy will always be with the $BATH token.
+                    </p>
+
+                    <div class="grilla" style="display: grid; grid-template-columns: 1fr 1fr 1fr;">
+                        <div>Motive</div>
+                        <div>Number of tokens</div>
+                        <div>Max Supply</div>
+                        <div>Private sale
+                        </div>
+                        <div>20.000.000
+                        </div>
+                        <div>2%
+                        </div>
+                        <div>AirDrop </div>
+                        <div>20.000.000</div>
+                        <div>2%
+                        </div>
+                        <div>ICO
+                        </div>
+                        <div>80.000.000</div>
+                        <div>8%
+                        </div>
+                        <div>Liquidity for Exchanges
+                        </div>
+                        <div>80.000.000
+                        </div>
+                        <div>8%
+                        </div>
+                        <div>Marketing </div>
+                        <div>80.000.000</div>
+                        <div>8%
+                        </div>
+                        <div>Team (5 years)
+                        </div>
+                        <div>150.000.000</div>
+                        <div>15%
+                        </div>
+                        <div>Rewards</div>
+                        <div>516.562.500
+                        </div>
+                        <div>51,65%
+                        </div>
+                        <div>Reservation    </div>
+                        <div>53.437.500</div>
+                        <div>5,35%
+                            </div>
+                        <div>TOTAL</div>
+                        <div>1.000.000.000</div>
+                        <div>100%
+                        </div>
+                    </div>
+
+                    <p >Token Burning/ BuyBack</p>
+                    <p>As mentioned before, $BATH will be the only token in the game's economy. So it will be used for opening chests, buying and selling in the marketplace, merging, participating in tournaments and an infinite number of other things that will cause the constant use of the token. All transactions that rewards us directly will generate token burnings of up to 80% of the cost of each purchase and the other 20% will be distributed again among all players, avoiding that every day more tokens are created than those that are burned. This makes $BATH deflationary by fact.</p>
+                </div>
+
+                <div id="airdrop" class="margen">  
+                    <h4 id="item-3">
+                        <font style="vertical-align: inherit;">
+                            <h1>BATH AirDrops and IDOs
+                            </h1>
+                        </font>
+                    </h4>
+                    <p>
+                        We want to give everyone the opportunity to participate in the start of the game, so we have divided the distribution of tokens in 3, where everyone will be able to participate, forming a total of 12% of the total supply of BATH tokens. There will be between all of them: 120.000.000 BATH in circulation. Remember that 25% of the BATH purchased will be delivered monthly in order to improve the economy of the token and to make sure that the token is not devaluated.
+                    </p>
+                    <p>So, if you have purchased 1000 BATH, you will receive 250 at purchase, 250 after 30 days, 250 after 60 days and 250 after 90 days. 
+                    </p>
+                    <p>The minimum purchase will be 0.01 BNB.
+                    </p>
+                    <h4>Pre-sales summary
+                    </h4>
+
+                    <div class="grilla">
+                        <div>Pre-Sales
+                        </div>
+                        <div>Price
+                        </div>
+                        <div>%
+                        </div>
+                        <div>Total number of tokens
+                        </div>
+                        <div>Private Investment (25% delivery per month)
+                        </div>
+                        <div>0.005 BUSD.
+                        </div>
+                        <div>2%
+                        </div>
+                        <div>20.000.000 </div>
+                        <div>AirDrop (WhiteList) (25% monthly delivery)
+                        </div>
+                        <div>0.005 BUSD
+                        </div>
+                        <div>2%
+                        </div>
+                        <div>20.000.000</div>
+                        <div>IDO (Open) (25% delivery month)
+                        </div>
+                        <div>0.01 BUSD
+                        </div>
+                        <div>8%
+                        </div>
+                        <div>80.000.000
+                        </div>
+                        <div>TOTAL</div>
+                        <div></div>
+                        <div>12%
+                        </div>
+                        <div>120.000.000</div>
+                    </div>
+                    <h4>Explanation of each pre-sale 
+                    </h4>
+                    <h4>Private Investment - BATH 0.005 BUSD
+                    </h4>
+                    <p>The Private investment is focused on those investors and partnerships that trust us from minute 0 of this project. These are already pre-selected.
+                    </p>
+                    <h4>Airdrop (Gleam.io) - BATH 0.005 BUSD
+                    </h4>
+                    <p>This Airdrop is focused on chance, thanks to the Gleam.io platform where you can participate for free, you can choose to be one of those selected to get your portfolio into WhiteList. 
+                    </p>
+                    <p>Keep in mind that the more entries you make on gleam.io, the more chances you will have to enter WhiteList.
+                    </p>
+                    <p>You can enter the sweepstakes here: https://gleam.io/dUrwa/battlehero
+                    </p>
+                    <h4>IDO (Public) - BATH 0.01 BUSD
+                    </h4>
+                    <p>The exit IDO is for all those who want to participate, without prior whitelist. They will just have to log in and make the purchase of the tokens you want.</p>
+                </div>
+
+                <div id="nft" class="margen">
+                    <h5 id="item-3-1">
+                        <font style="vertical-align: inherit;">
+                            <h1>NFTs</h1>
+                        </font>
+                    </h5>
+                    <p>
+                        All our NFT's have a 3D view, here is a sample of how a Hero and a Weapon would look like in the Battle Hero world.
+                    </p>
+                    <img src="../img/example.png" alt="" style="width: 100%; max-width: 1000px;">
+                </div>
+                
+                <div id="requi" class="margen">
+                    <h5 id="item-3-2">
+                        <font style="vertical-align: inherit;">
+                            <h1>Requirements for BattleHero
+                            </h1>
+                        </font>
+                    </h5>
+                    <p>The goal is to make the game available in as many devices as possible:
+                    </p>
+                    <ul>
+                        <li>Windows </li>
+                        <li>MacOS</li>
+                        <li>Linux</li>
+                        <li>Android</li>
+                        <li>iOS</li>
+                    </ul>
+                    <p>To play you will only need an internet connection and time to have fun.</p>
+                </div>
+                
+                <div id="roadmap" class="margen">
+                    <h5 id="item-3-2">
+                        <font style="vertical-align: inherit;">
+                            <h1>Roadmap
+                            </h1>
+                        </font>
+                    </h5>
+                    <h4>2021</h4>
+
+                    <div class="q1">
+                        <h6>Q2 2021</h6>
+                        <p>-Official name of the game "Battle Hero"  
+                        </p>
+                        <p>-Social Networking</p>
+                        <p>-Structure of the 2 game types</p>
+                        <p>-Structure of the economy</p>
+                        <p>-Private investment</p>
+                    </div>
+                    
+                    <div class="q1">
+                        <h6>Q3 2021</h6>
+                        <p>-Official launch of the website https: //battlehero.io</p>
+                        <p>-WhitePaper and RoadMap creation</p>
+                        <p>-Contract creation</p>
+                        <p>-Creation of the draw in gleam.io 
+                        </p>
+                        <p>-Audit of Contracts  
+                        </p>
+                        <p>-Official launch of the DAPP website (October 1st)  
+                        </p>
+                        <p>-LIMITED NFTs presale of all rarities (October 1st, 2nd and 3rd)  
+                        </p>
+                        <p>-First presale in AirDrop WhiteList format of the BATH token. (October 15th)  
+                        </p>
+                        <p>-IDO of the BATH token (October 19th) 
+                        </p>
+                        <p>-Listing of the token on Pancake Swap and other exchanges (October 20th)
+                        </p>
+                        <p>-Purchase of standart chests (October 20th) 
+                        </p>
+                        <p>-Opening of the marketplace (October 20th) 
+                        </p>
+                        <p>-Opening of the NFT training / stacking mode. (October 20th) 
+                        </p>
+                    </div>
+                    
+                    <div class="q1">
+                        <h6>Q4 2021 (Actual) 
+                        </h6>
+                        <p>-Fusions (upgrade rarity) 
+                        </p>
+                        <p>-Shoot gun camp (pre-alfa) 
+                        </p>
+                        <p>-NFT BEP721 Upgrade & redesign 
+                        </p>
+                        <p>-Lottery by staking $BATH 
+                        </p>
+                        <p>-DApp mobile optimization & redesign</p>
+                        <p>-Christmas special packs releases</p>
+                        <p>-Website improvement & redesign</p>
+                        <p> -BSC private node integration</p>
+                        <p>-Integration with Cardano and Polygon network</p>
+                        <p>-Battlehero In-Game 3D for all platforms with 1vs and 5v5 modes (Closed Beta)
+                        </p>
+                    </div>
+                    
+                    <h4>2022</h4>
+                    <div class="q1">
+                        <h6> Q1 2022
+                        </h6>
+                        <p>-Creation of our own Wallet 
+                        </p>
+                        <p>-BattleHero In-Game 3D for all platforms with 1vs and 5v5 modes (Open Beta)
+                        </p>
+                        <p>-First tournaments and leagues 
+                        </p>
+                        <p>-BH Clan 
+                        </p>
+                        <p>-Scholarships
+                        </p>
+                        <p>-Skins In-Game
+                        </p>
+                    </div>
+
+                    <div class="q1">
+                        <h6>Q2 2022
+                        </h6>
+                        <p>-PvE
+                        </p>
+                        <p>-New game modes such as 10vs10 or all vs. there
+                        </p>
+                        <p>-Extra special weapon attacks</p>
+                        <p>-Weapon + Hero combos</p>
+                        <p>-Game modes on user's request</p>
+                        <p>Community created maps</p>
+                    </div>
+
+                    <div style="height: 25px;">
+
+                    </div>
+                </div>
+
+                <div id="rules" class="margen">
+                    <h5 id="item-3-2">
+                        <font style="vertical-align: inherit;">
+                            <h1>Rules
+                            </h1>
+                        </font>
+                    </h5>
+                    <h4>Reasons for BAN
+                    </h4>
+                    <p>The following reasons will mean permanent in-game BAN, with no possibility of obtaining in-game rewards.
+                    </p>
+                    <h5>Reasons</h5>
+                    <ul>
+                        <li>Using more than 2 accounts from the same IP address
+                        </li>
+                        <li>Use two or more accounts per person
+                        </li>
+                        <li>Use any type of "cheat". For example bots, cheats, etc.
+                        </li>
+                        <li>Abuse of bugs or errors
+                        </li>
+                        <li>Not respecting others in the chats. With insults, harassment...</li>
+                    </ul>
+                </div>
+
+                <div id="weapon" class="margen">
+                    <h5 id="item-3-2">
+                        <font style="vertical-align: inherit;">
+                            <h1>Weapons and their rarity
+
+                            </h1>
+                        </font>
+                    </h5>
+                    <img src="../img/armas.png" alt="" style="width: 100%; max-width: 1000px;">
+                    <p>As of today there are 20 completely different Weapons in Battle Hero, but rest assured that we will be adding new Weapons over the course of the game. 
+                    </p>
+                    <p>All Weapons can appear in any of the 6 rarities.
+                    </p>
+                    <ul>
+                        <li>Rarities</li>
+                        <li>Common</li>
+                        <li>Low Rare</li>
+                        <li>Rare</li>
+                        <li>Epic</li>
+                        <li>Legendary</li>
+                        <li>Mythic</li>
+                    </ul>
+                    <p>There is a 30% difference margin between weapons in the same rarity. This will make weapons better or worse in stats causing some NFTs to be better than others.
+                    </p>
+                    <p>
+                        Each weapon excels in some basic statistics. Some of them, by their nature, will be faster or perhaps will have more life. 
+
+                    </p>
+                </div>
+
+
+                <div id="porba" class="margen"> 
+                    <h5 id="item-3-2">
+                        <font style="vertical-align: inherit;">
+                            <h1>Types of Chests and their probabilities
+                            </h1>
+                        </font>
+                    </h5>
+                    <p>You will need BATH to open chests as they will only be opened with it. The 3 types of chests (standard) that will always be available are the following:
+                    </p>
+                    <div class="grilla3"> 
+                        <div>Chest</div>
+                        <div>Lot</div>
+                        <div>Price</div>
+                        <div>Hero Chest
+                        </div>
+                        <div>1 Hero
+                        </div>
+                        <div>To be determined
+                            </div>
+                        <div>Weapon Chest
+                        </div>
+                        <div>1 Weapon
+                        </div>
+                        <div>To be determined</div>
+                        <div>Dual Chest (- 20%OFF)
+                        </div>
+                        <div>1 Hero + 1 Weapon
+                        </div>
+                        <div>To be determined
+                        </div>
+                    </div>
+                    <p>Additionally in previously announced events, we will be able to add other types of chests with higher probabilities in obtaining higher rarities or even with double reward probability in the same chest. Who knows... anything can happen in Battle Hero.
+                    </p>
+                    <h4>Probabilities in any type of standard chest
+                    </h4>
+                    <div class="grilla3">
+                        <div>Rarity</div>
+                        <div>Color</div>
+                        <div>Probability</div>
+                        <div>Common</div>
+                        <div>Gray</div>
+                        <div>54.93%</div>
+                        <div>Low Rare
+                        </div>
+                        <div>Light Blue
+                        </div>
+                        <div>27.47%
+                        </div>
+                        <div>Rare</div>
+                        <div>Dark Blue
+                        </div>
+                        <div>13.73%
+                        </div>
+                        <div>Epic</div>
+                        <div>Purple</div>
+                        <div>3.43%
+                        </div>
+                        <div>Legendary</div>
+                        <div>Orange</div>
+                        <div>0.43%
+                        </div>
+                        <div>Mythic</div>
+                        <div>Black</div>
+                        <div>0.01%
+                        </div>
+                    </div>
+                </div>
+
+                <div id="funsions" class="margen">
+                    <h5 id="item-3-2">
+                        <font style="vertical-align: inherit;">
+                            <h1>Fusions (Rarity Upgrades)
+                            </h1>
+                        </font>
+                    </h5>
+
+                    <p>What would be for an NFT game without being able to merge NFTs? We have created this fusion system which will allow you to improve the rarity of your NFT (and potentially making it more valuable).
+                    </p>
+                    <div class="grilla3">
+                        <div>Initial Rarity
+                        </div>
+                        <div>Rareza Destino
+                        </div>
+                        <div>Cost</div>
+                        <div>Common</div>
+                        <div>Little Rare
+                        </div>
+                        <div>3 NFTS Common + 50 BATH
+                        </div>
+                        <div>Little Rare
+                        </div>
+                        <div>Rare</div>
+                        <div>3 NFTS Little Rare+ 150 BATH
+                        </div>
+                        <div>Rare</div>
+                        <div>Epic</div>
+                        <div>3 NFTS Rare + 500 BATH
+                        </div>
+                        <div>Epic</div>
+                        <div>Legendary</div>
+                        <div>3 NFTS Epic+ 1000 BATH
+                        </div>
+                        <div>Legendary</div>
+                        <div>Mythic</div>
+                        <div>3 Legendary NFTS + 2000 BATH
+                        </div>
+                    </div>
+                    <p>All 3 NFTs no matter if they are weapons or heroes they all must be the same hero or weapon. You cannot upgrade different types. For example: If you want to upgrade a Bear Hero from Rare to Epic, you must have 3 Rare Bear NFTs.
+                    </p>
+                    <p>The resulting NFT is not random. If you merge NFTs of higher level, you will have more probability of obtaining an NFT with better statistics.
+                    </p>
+                </div>
+
+                <div id="market" class="margen">
+                    <h5 id="item-3-2">
+                        <font style="vertical-align: inherit;">
+                            <h1>Marketplace
+                            </h1>
+                        </font>
+                    </h5>
+                    <p>The Battle Hero NFT Marketplace is a decentralized exchange where users can buy and sell any Battle Hero NFT without leaving the platform. You can only buy and sell NFTs with $BATH and $BNB.
+                    </p>
+                    <p>Battle Hero Marketplace charges a 5% commission fee that goes to the BuyBack group.</p>
+                </div>
+
+                <div id="social" class="margen">
+                    <h5 id="item-3-2">
+                        <font style="vertical-align: inherit;">
+                            <h1>Social Media, Chats and Support
+
+                            </h1>
+                        </font>
+                    </h5>
+                    <p>Discord: https://discord.gg/Vr3gVffM
+                    </p>
+                    <p>
+                        Telegram Official Announcements (channel): https://t.me/battlehero_official 
+
+                    </p>
+                    <p>Telegram ESP (chat): https://t.me/BattleHeroESP 
+                    </p>
+                    <p>Telegram EN (chat): https://t.me/BattleHeroEN 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
